@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.quiz.MainActivity"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/background_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shadowColor="#000000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="10"
+            android:gravity="center"
+            android:text="@string/question"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            android:fontFamily="casual"/>
+
+        <TextView
+            android:id="@+id/mountain_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#54000000"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="10"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            android:fontFamily="casual"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/answer_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#54000000"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="10"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:padding="15dp"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:fontFamily="casual"
+                android:onClick="setFirstAnswer"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/answer_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#54000000"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="10"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:padding="15dp"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:fontFamily="casual"
+                android:onClick="setSecondAnswer"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/answer_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#54000000"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="10"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:padding="15dp"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:fontFamily="casual"
+                android:onClick="setThirdAnswer"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                />
+
+            <TextView
+                android:id="@+id/answer_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#54000000"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="10"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:padding="15dp"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:fontFamily="casual"
+                android:onClick="setFourthAnswer"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
